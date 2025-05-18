@@ -1,7 +1,3 @@
-enum Size {
-    XS("Extra Small"),
-    S("Small"),
-    M("Medium"),
-    L("Large"),
-    XL("Extra Large")
+public enum Size {
+    XS, S, M, L, XL
 }
