@@ -101,3 +101,7 @@ Pembayaran berhasil!
 Proyek ini dibuat tanpa database atau antarmuka grafis.
 
 Fokus pada konsep dasar OOP: inheritance, polymorphism, interface, dan encapsulation.
+
+Nama Kelompok
+!. Aditya Dzaky Widiantoro ( 50424035 )
+2. Celvin Saputra ( 504242469 )
