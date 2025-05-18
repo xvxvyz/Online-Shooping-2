@@ -1,9 +1,9 @@
 import java.time.LocalDateTime;
 
-abstract class Product {
-    private String name;
-    private double price;
-    private final LocalDateTime createdAt;
+public abstract class Product {
+    protected String name;
+    protected double price;
+    protected LocalDateTime createdAt;
 
     public Product(String name, double price) {
         this.name = name;
@@ -23,11 +23,7 @@ abstract class Product {
         return createdAt;
     }
 
-    public void displayDetails() {
-        System.out.println("Nama: " + name);
-        System.out.println("Harga: Rp" + price);
-        System.out.println("Dibuat pada: " + createdAt);
-    }
-
     public abstract String getCategory();
+
+    public abstract void displayDetails();
 }
