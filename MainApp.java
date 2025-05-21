@@ -16,8 +16,8 @@ public class MainApp {
         System.out.println("\n=== Detail Produk 2 ===");
         tshirt.displayDetails();
         if (tshirt instanceof Discountable) {
-            double discount = ((Discountable) tshirt).getDiscountedPrice(15);
-            System.out.println("Harga Setelah Diskon 15%: Rp" + discount);
+            double discount = ((Discountable) tshirt).getDiscountedPrice(10);
+            System.out.println("Harga Setelah Diskon 10%: Rp" + discount);
         }
     }
 }
