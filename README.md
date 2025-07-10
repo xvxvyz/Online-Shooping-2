@@ -106,3 +106,6 @@ Nama Kelompok
 1. Aditya Dzaky Widiantoro ( 50424035 )
    
 2. Celvin Saputra ( 504242469 )
+
+3. Ahmad Nagata Aziz ( 50424066 )
+
