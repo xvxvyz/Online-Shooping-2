@@ -135,9 +135,13 @@ Proyek ini dibuat tanpa database atau antarmuka grafis.
 Fokus pada konsep dasar OOP: inheritance, polymorphism, interface, dan encapsulation.
 
 🔐 Login Info Default
-Username	Password
-admin	123
-natan	abc
+
+
+| Username | Password |
+| -------- | -------- |
+| admin    | 123      |
+| natan    | abc      |
+
 
 Nama Kelompok
 1. Aditya Dzaky Widiantoro ( 50424035 )
