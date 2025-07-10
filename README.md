@@ -1,31 +1,63 @@
-# Online-Shooping-2
-Project ke 2 Online Shoping
-📦 Java Shopping App
-Aplikasi belanja sederhana berbasis Java menggunakan konsep Object-Oriented Programming (OOP). Program ini memungkinkan pengguna untuk membuat produk, menambahkannya ke keranjang, menerapkan diskon, dan memproses pesanan menggunakan gateway pembayaran.
+# 🛒 Java Online Shopping Console App
 
-🚀 Fitur
-📦 Menambahkan produk elektronik dan pakaian
+Aplikasi belanja sederhana berbasis **Java Console** yang menggabungkan dua proyek:
 
-🛒 Menyimpan produk ke dalam keranjang belanja
+1. **E-Commerce Console App** – Menyediakan login multi-user, keranjang, checkout.
+2. **Online Shopping Java App** – Menambahkan fitur diskon, sistem pemesanan, dan payment gateway.
 
-🎁 Menghitung harga setelah diskon
+Aplikasi ini dibangun sepenuhnya dengan prinsip **Object-Oriented Programming (OOP)** seperti inheritance, polymorphism, encapsulation, dan interfaces.
 
-💳 Memproses pembayaran menggunakan sistem PaymentGateway
+---
 
-👤 Menyimpan informasi pelanggan
+## ✨ Fitur Utama
 
-🧱 Struktur Kelas
-Kelas	Deskripsi
-Product	Kelas abstrak untuk semua jenis produk
-Electronics	Subkelas Product, mewakili produk elektronik
-Clothing	Subkelas Product, mewakili pakaian
-Discountable	Interface untuk produk yang bisa diberi diskon
-ShoppingCart	Menyimpan item dan menghitung total harga
-Customer	Menyimpan informasi pelanggan
-Order	Mewakili pesanan, memproses pembayaran
-PaymentGateway	Interface untuk metode pembayaran
-CreditCardPaymentGateway	Implementasi PaymentGateway untuk kartu kredit
-Size	Enum ukuran pakaian (S, M, L, XL)
+### 📦 Manajemen Produk
+- Tambah produk **elektronik** dan **pakaian**
+- Menyimpan produk ke dalam **keranjang belanja**
+- Dukungan ukuran pakaian melalui `Enum Size`
+
+### 🧺 Keranjang & Checkout
+- Keranjang menyimpan item dan menghitung total
+- Mendukung diskon otomatis melalui `Discountable` interface
+
+### 👥 Login Multi-User
+- Beberapa pengguna dengan username dan password berbeda
+- Login diperlukan untuk checkout
+
+### 🎁 Diskon Otomatis
+- Diskon 10% untuk produk elektronik
+- Diskon 20% untuk produk pakaian
+
+### 💳 Gateway Pembayaran
+- Menggunakan interface `PaymentGateway`
+- Implementasi `CreditCardPaymentGateway` untuk simulasi pembayaran
+
+### 👤 Manajemen Pelanggan
+- Data pelanggan disimpan melalui class `Customer`
+- Pesanan dicatat melalui class `Order`
+
+---
+
+## 🧱 Struktur Kelas
+
+| Kelas / Interface             | Deskripsi                                                                 |
+|------------------------------|---------------------------------------------------------------------------|
+| `Product`                    | Kelas abstrak dasar semua produk                                          |
+| `Electronics`, `Clothing`    | Subclass `Product` (kategori produk)                                      |
+| `Discountable`               | Interface untuk produk yang mendapatkan diskon                            |
+| `ShoppingCart`               | Menyimpan daftar produk yang dibeli                                       |
+| `Customer`                   | Menyimpan data pelanggan                                                  |
+| `Order`                      | Mewakili satu transaksi / pesanan                                         |
+| `PaymentGateway`             | Interface sistem pembayaran                                               |
+| `CreditCardPaymentGateway`   | Implementasi pembayaran via kartu kredit                                  |
+| `User`, `UserManager`        | Sistem login multi-user                                                   |
+| `Size`                       | Enum ukuran pakaian (S, M, L, XL)                                          |
+
+---
+
+## 📁 Struktur Folder
+
+L, XL)
 
 📂 Struktur File
 mathematica
@@ -33,6 +65,7 @@ Copy
 Edit
 ShoppingApp/
 │
+├── READ.md
 ├── MainApp.java
 ├── Product.java
 ├── Electronics.java
@@ -42,9 +75,10 @@ ShoppingApp/
 ├── Customer.java
 ├── Order.java
 ├── PaymentGateway.java
-├── CreditCardPaymentGateway.java
 ├── Size.java
-└── README.md
+└── User.md
+└── CreditCardPayment
+└── UserManager.java
 🧪 Cara Menjalankan
 Kompilasi semua file Java:
 
@@ -69,11 +103,7 @@ Ringkasan keranjang
 Proses pembayaran
 
 📝 Contoh Output
-yaml
-Copy
-Edit
 --- Detail Produk ---
-
 Nama: Laptop Acer
 Harga: Rp8000000.0
 Merk: Acer
@@ -95,17 +125,22 @@ Rincian keranjang:
 Laptop Acer x1 = Rp8000000.0
 Kaos Polos x2 = Rp100000.0
 Total: Rp8100000.0
+
 Memproses pembayaran sebesar Rp8100000.0 melalui kartu kredit...
-Pembayaran berhasil!
+✅ Pembayaran berhasil!
+
 📌 Catatan
 Proyek ini dibuat tanpa database atau antarmuka grafis.
 
 Fokus pada konsep dasar OOP: inheritance, polymorphism, interface, dan encapsulation.
 
+🔐 Login Info Default
+Username	Password
+admin	123
+natan	abc
+
 Nama Kelompok
 1. Aditya Dzaky Widiantoro ( 50424035 )
-   
-2. Celvin Saputra ( 504242469 )
 
-3. Ahmad Nagata Aziz ( 50424066 )
+2. Ahmad Nagata Aziz ( 50424066 )
 
