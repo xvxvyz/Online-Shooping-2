@@ -60,25 +60,27 @@ Aplikasi ini dibangun sepenuhnya dengan prinsip **Object-Oriented Programming (O
 L, XL)
 
 📂 Struktur File
-mathematica
-Copy
-Edit
-ShoppingApp/
-│
-├── READ.md
-├── MainApp.java
-├── Product.java
-├── Electronics.java
-├── Clothing.java
-├── Discountable.java
-├── ShoppingCart.java
-├── Customer.java
-├── Order.java
-├── PaymentGateway.java
-├── Size.java
-└── User.md
-└── CreditCardPayment
-└── UserManager.java
+
+| Lokasi                   | Nama File / Folder              | Deskripsi                                        |
+| ------------------------ | ------------------------------- | ------------------------------------------------ |
+| `OnlineShoppingApp/`     | `README.md`                     | Dokumentasi proyek                               |
+| `OnlineShoppingApp/src/` | `ecommerce/`                    | Package utama untuk seluruh class Java           |
+| `ecommerce/`             | `MainApp.java`                  | Program utama (entry point)                      |
+| `ecommerce/`             | `Product.java`                  | Kelas abstrak dasar produk                       |
+| `ecommerce/`             | `Clothing.java`                 | Subclass `Product`, untuk pakaian                |
+| `ecommerce/`             | `Electronics.java`              | Subclass `Product`, untuk elektronik             |
+| `ecommerce/`             | `Discountable.java`             | Interface untuk produk yang bisa diberi diskon   |
+| `ecommerce/`             | `Size.java`                     | Enum ukuran pakaian (S, M, L, XL)                |
+| `ecommerce/`             | `CartItem.java`                 | Objek item dalam keranjang                       |
+| `ecommerce/`             | `ShoppingCart.java`             | Menyimpan daftar produk dalam keranjang          |
+| `ecommerce/`             | `Customer.java`                 | Menyimpan data pelanggan                         |
+| `ecommerce/`             | `Order.java`                    | Mengelola proses pemesanan dan checkout          |
+| `ecommerce/`             | `PaymentGateway.java`           | Interface sistem pembayaran                      |
+| `ecommerce/`             | `CreditCardPaymentGateway.java` | Implementasi `PaymentGateway` untuk kartu kredit |
+| `ecommerce/`             | `User.java`                     | Data user login                                  |
+| `ecommerce/`             | `UserManager.java`              | Autentikasi & penyimpanan user                   |
+
+
 🧪 Cara Menjalankan
 Kompilasi semua file Java:
 
