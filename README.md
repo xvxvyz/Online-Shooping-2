@@ -149,6 +149,6 @@ Fokus pada konsep dasar OOP: inheritance, polymorphism, interface, dan encapsula
 
 Nama Kelompok
 1. Aditya Dzaky Widiantoro ( 50424035 )
-
 2. Ahmad Nagata Aziz ( 50424066 )
+3. Dimas Pranata Togatorop (50424333)
 
